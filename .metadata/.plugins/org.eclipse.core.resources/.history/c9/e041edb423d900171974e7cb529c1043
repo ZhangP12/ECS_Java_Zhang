@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class TwoQuestions {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println( "Think of an object, and I will try to guess what it is by asking you two questions.\n\n" );
+		
+		
+	}
+	
+}

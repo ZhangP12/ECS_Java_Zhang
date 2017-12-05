@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class BMICalcBetter {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		double heightFeet, heightInches, height
+		
+		System.out.println( "What is your height in feet, rounded down? (Inches will be queried later)." );
+		
+		
+		System.out.println( "What is your height in inches." );
+		
+	}
+	
+}

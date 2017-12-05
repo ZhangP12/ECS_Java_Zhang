@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class TwoQuestions {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		String input1, input2, guess;
+		
+		System.out.println( "Think of an object, and I will try to guess what it is by asking you two questions.\n" );
+		
+		System.out.println( "Is it an animal, vegetable, or mineral?" );
+		input1 = input.nextLine();
+		
+		System.out.println( "Is it bigger than a breadbox?" );
+		input2 = input.nextLine();
+		
+		if ( input2.equals("")))
+		
+		System.out.println( "Is it " + guess + "?" );
+		
+	}
+	
+}
