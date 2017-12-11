@@ -8,12 +8,12 @@ public class AreaCalculator
 		
 		Scanner input = new Scanner(System.in);
 		
-		int userShape;
+		int userShape = 0;
 		
 		System.out.println( "AREA OF SHAPES CALCULATOR\n" );
 		
 		do
-		{	
+		{
 			System.out.println( "1.) Triangle" );
 			System.out.println( "2.) Rectangle" );
 			System.out.println( "3.) Square" );
@@ -40,12 +40,18 @@ public class AreaCalculator
 					break;
 				default:
 					System.out.println( "\nPlease enter a number from 1 to 5." );
-					break;
+			
 			}
+			
+			System.out.println( "Would you like to go again (Enter Y for yes, N for no)?" );
+
+			userShape = ( input.nextLine() == "Y" ) ? 5 : 0;
 			
 		} while ( userShape != 5 );
 		
-		System.out.println( "You quit the program." );
+		System.out.println( "You quit the dank program." );
+		
+		input.close();
 		
 	}
 	
@@ -63,6 +69,8 @@ public class AreaCalculator
 		
 		System.out.print( "Please enter the height: ");
 		height = input.nextDouble();
+		
+		input.close();
 		
 		triangleArea = height * base / 2;
 		
@@ -85,6 +93,8 @@ public class AreaCalculator
 		System.out.print( "Please enter the height: ");
 		height = input.nextDouble();
 		
+		input.close();
+		
 		rectangleArea = height * base;
 		
 		System.out.println( "The area of your square is " + rectangleArea + " (with base " + base + " and height " + height + ").\n" );
@@ -103,6 +113,8 @@ public class AreaCalculator
 		System.out.print( "Please enter the length: " );
 		length = input.nextDouble();
 		
+		input.close();
+		
 		squareArea = Math.pow( length, 2 );
 		
 		System.out.println( "The area of your triangle is " + squareArea + " (with length " + length + ").\n" );
@@ -120,6 +132,8 @@ public class AreaCalculator
 		
 		System.out.print( "Please enter the radius: ");
 		radius = input.nextDouble();
+		
+		input.close();
 		
 		circleArea = Math.PI * Math.pow( radius, 2 );
 		

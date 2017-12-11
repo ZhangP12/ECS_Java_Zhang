@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AreaCalculator
+public class AreaCalculatorRepeat
 {
 
 	public static void main(String[] args)
@@ -25,16 +25,16 @@ public class AreaCalculator
 			switch ( userShape )
 			{
 				case 1:
-					calcTriangleArea();
+					System.out.println( "Area of triangle is " + calcTriangleArea() + "." );
 					break;
 				case 2:
-					calcRectangleArea();
+					System.out.println( "Area of rectangle is " + calcRectangleArea()  + "." );
 					break;
 				case 3:
-					calcSquareArea();
+					System.out.println( "Area of square is " + calcSquareArea() + "." );
 					break;
 				case 4:
-					calcCircleArea();
+					System.out.println( "Area of circle is " + calcCircleArea() + "." );
 					break;
 				case 5:
 					break;
@@ -47,9 +47,11 @@ public class AreaCalculator
 		
 		System.out.println( "You quit the program." );
 		
+		input.close();
+		
 	}
 	
-	public static void calcTriangleArea()
+	public static double calcTriangleArea()
 	{
 		
 		Scanner input = new Scanner(System.in);
@@ -66,11 +68,11 @@ public class AreaCalculator
 		
 		triangleArea = height * base / 2;
 		
-		System.out.println( "The area of your triangle is " + triangleArea + " (with base " + base + " and height " + height + ").\n" );
+		return triangleArea;
 		
 	}
 	
-	public static void calcRectangleArea()
+	public static double calcRectangleArea()
 	{
 		
 		Scanner input = new Scanner(System.in);
@@ -87,11 +89,11 @@ public class AreaCalculator
 		
 		rectangleArea = height * base;
 		
-		System.out.println( "The area of your square is " + rectangleArea + " (with base " + base + " and height " + height + ").\n" );
+		return rectangleArea;
 		
 	}
 	
-	public static void calcSquareArea()
+	public static double calcSquareArea()
 	{
 		
 		Scanner input = new Scanner(System.in);
@@ -105,11 +107,11 @@ public class AreaCalculator
 		
 		squareArea = Math.pow( length, 2 );
 		
-		System.out.println( "The area of your triangle is " + squareArea + " (with length " + length + ").\n" );
+		return squareArea;
 		
 	}
 	
-	public static void calcCircleArea()
+	public static double calcCircleArea()
 	{
 		
 		Scanner input = new Scanner(System.in);
@@ -123,7 +125,7 @@ public class AreaCalculator
 		
 		circleArea = Math.PI * Math.pow( radius, 2 );
 		
-		System.out.println( "The area of your circle is approximately " + circleArea + " (with radius " + radius + ").\n" );
+		return circleArea;
 		
 	}
 	

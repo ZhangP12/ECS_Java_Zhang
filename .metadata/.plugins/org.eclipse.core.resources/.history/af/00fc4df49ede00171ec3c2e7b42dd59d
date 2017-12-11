@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class AreaCalculator
+{
+
+	public static void main(String[] args)
+	{
+		
+		Scanner input = new Scanner(System.in);
+		
+		int userShape = 0;
+		
+		System.out.println( "AREA OF SHAPES CALCULATOR\n" );
+		
+		while ( userShape != 5 )
+		{
+			System.out.println();
+			System.out.println( "1.) Triangle" );
+			System.out.println( "2.) Rectangle" );
+			System.out.println( "3.) Square" );
+			System.out.println( "4.) Circle" );
+			System.out.println( "5.) Quit" );
+			System.out.print( "Select a shape or quit by entering one of the above numbers: ");
+			userShape = input.nextInt();
+			
+			switch ( userShape )
+			{
+				case 1:
+					System.out.println( "");
+					break;
+				case 2:
+					break;
+				case 3:
+					break;
+				case 4:
+					break;
+				case 5:
+					break;
+				default:
+					System.out.println( "Please enter a number from 1 to 5." );
+					break;
+			
+			}
+			
+		}
+		
+	}
+	
+}

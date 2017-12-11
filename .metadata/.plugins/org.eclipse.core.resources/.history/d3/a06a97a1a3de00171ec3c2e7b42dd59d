@@ -13,7 +13,9 @@ public class AreaCalculator
 		System.out.println( "AREA OF SHAPES CALCULATOR\n" );
 		
 		do
-		{	
+		{
+			Scanner input = new Scanner(System.in);
+			
 			System.out.println( "1.) Triangle" );
 			System.out.println( "2.) Rectangle" );
 			System.out.println( "3.) Square" );
@@ -47,6 +49,8 @@ public class AreaCalculator
 		
 		System.out.println( "You quit the program." );
 		
+		input.close();
+		
 	}
 	
 	public static void calcTriangleArea()
@@ -63,6 +67,8 @@ public class AreaCalculator
 		
 		System.out.print( "Please enter the height: ");
 		height = input.nextDouble();
+		
+		input.close();
 		
 		triangleArea = height * base / 2;
 		
@@ -85,6 +91,8 @@ public class AreaCalculator
 		System.out.print( "Please enter the height: ");
 		height = input.nextDouble();
 		
+		input.close();
+		
 		rectangleArea = height * base;
 		
 		System.out.println( "The area of your square is " + rectangleArea + " (with base " + base + " and height " + height + ").\n" );
@@ -103,6 +111,8 @@ public class AreaCalculator
 		System.out.print( "Please enter the length: " );
 		length = input.nextDouble();
 		
+		input.close();
+		
 		squareArea = Math.pow( length, 2 );
 		
 		System.out.println( "The area of your triangle is " + squareArea + " (with length " + length + ").\n" );
@@ -120,6 +130,8 @@ public class AreaCalculator
 		
 		System.out.print( "Please enter the radius: ");
 		radius = input.nextDouble();
+		
+		input.close();
 		
 		circleArea = Math.PI * Math.pow( radius, 2 );
 		
