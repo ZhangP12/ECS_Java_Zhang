@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class FindingPrimes
+{
+
+	public static void main(String[] args)
+	{
+		
+		Scanner input = new Scanner(System.in);
+		
+		double lowEnd, highEnd;
+		
+		System.out.print( "Low endpoint: " );
+		lowEnd = input.nextDouble();
+		System.out.print( "High endpoint: " );
+		highEnd = input.nextDouble();
+		
+		
+	}
+	
+}
