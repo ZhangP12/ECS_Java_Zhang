@@ -3,16 +3,9 @@ import java.util.Scanner;
 public class AreaCalculator
 {
 
-	public static double no()
-	{
-		int hello = 9;
-		return hello;
-	}
-	
 	public static void main(String[] args)
 	{
 		
-		no();
 		Scanner input = new Scanner(System.in);
 		
 		int userShape;

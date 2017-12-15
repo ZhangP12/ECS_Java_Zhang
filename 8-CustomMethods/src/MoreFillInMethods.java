@@ -17,10 +17,10 @@ public class MoreFillInMethods
 		lo = 1;
 		hi = 10;
 		
-		superrand(lo, hi);
+		val1 = superrand(lo, hi);
 		System.out.println("First: " + val1 );
 		
-		superrand(hi, lo);  // this time, put hi first
+		val2 = superrand(hi, lo);  // this time, put hi first
 		System.out.println("Second: " + val2 );
 		
 		if ( val1 == val2 )

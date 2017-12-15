@@ -1,12 +1,6 @@
 import java.util.Scanner;
 
-public class AddingValuesForLoop
-{
-
-	public static void main(String[] args)
-	{
-		
-		Scanner input = new Scanner(System.in);
+public class AddingValuesForLoop { public static void main(String[] args) {Scanner input = new Scanner(System.in);
 		
 		int userNum = input.nextInt();
 		long total = 0;
